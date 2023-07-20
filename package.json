@@ -1,0 +1,22 @@
+{
+  "name": "ellement",
+  "version": "1.0.0",
+  "description": "A prenatal company landing",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orisabiyi/ellement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Orisabiyi/ellement/issues"
+  },
+  "homepage": "https://github.com/Orisabiyi/ellement#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

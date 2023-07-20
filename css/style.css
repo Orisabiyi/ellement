@@ -1,0 +1,121 @@
+:root {
+  --dominant-color: #2C2C2E;
+  --primary-color: #DCCBBC;
+  --primary-color-1: #EEE;
+  --secondary-color: #D1D3FF;
+  --secondary-color-1: #333C6A;
+  --primary-gradient: linear-gradient(114deg, #A0FFFE 0%, #A6FFDA 46.29%, #B7FFB0 96.84%); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  color: var(--dominant-color);
+  line-height: 1.3; }
+
+.paragraph--1 {
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+.paragraph--1::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: translateY(-10px); }
+
+.paragraph--2 {
+  font-size: 2.5rem; }
+
+.heading__heading-main, .heading__heading-sub {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1; }
+
+.heading__heading-main {
+  font-size: 7rem; }
+
+.heading__heading-sub {
+  font-size: 6rem;
+  font-style: italic; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+  border-radius: 10rem; }
+
+.btn--1 {
+  background: var(--primary-gradient);
+  color: inherit; }
+
+.btn--2 {
+  border: 1px solid var(--secondary-color-1);
+  color: var(--secondary-color-1); }
+
+.header {
+  display: flex;
+  height: 100vh;
+  background-color: var(--primary-color); }
+  .header__hero, .header__img {
+    flex: 1; }
+  .header__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem; }
+  .header__background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 16rem; }
+  .about__img, .about__text {
+    flex: 1; }
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; }
+    .about__text > a {
+      align-self: flex-start;
+      margin-top: 4rem; }
+  .about__heading--1, .about__heading--2, .about__heading--3 {
+    display: block;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--secondary-color-1); }
+  .about__background {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: cover; }
+
+.section-about {
+  padding: 10rem 5rem;
+  background-color: var(--secondary-color); }
+
+.section-properties {
+  padding: 10rem 0;
+  background-color: var(--primary-color-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }

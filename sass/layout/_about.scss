@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+
+
+  &__img, &__text {
+    flex: 1;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    & > a {
+      align-self: flex-start;
+      margin-top: 4rem;
+    }
+  }
+
+  &__heading--1, &__heading--2,
+  &__heading--3 {
+    display: block;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--secondary-color-1);
+  }
+
+  &__background {
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+}
