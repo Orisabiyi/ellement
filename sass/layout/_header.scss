@@ -1,14 +1,38 @@
 .header {
-  display: flex;
-
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--primary-color);
+  position: relative;
 
-  &__hero, &__img {
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__nav {
+    display: flex;
+    align-self: center;
+    flex: 0 0 auto;
+    width: 95%;
+
+    padding: 2rem 4rem;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 50rem;
+    position: absolute;
+    transform: translateY(2rem);
+  }
+
+  &__logo {
+    margin-right: auto;
   }
 
   &__hero {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hero--1, &__hero--2 {
+    flex: 1;
+  }
+
+  &__hero--1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +46,8 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.logo {
+  width: 15rem;
 }

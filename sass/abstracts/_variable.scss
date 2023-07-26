@@ -7,4 +7,7 @@
   --secondary-color-1: #333C6A;
 
   --primary-gradient: linear-gradient(114deg, #A0FFFE 0%, #A6FFDA 46.29%, #B7FFB0 96.84%);
+  --primary-gradient-modified: linear-gradient(to left, #A6FFDA 46.29%, #B7FFB0 96.84%);
 }
+
+$dominant-color: var(--dominant-color);

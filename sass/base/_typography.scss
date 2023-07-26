@@ -17,6 +17,11 @@
   &--2 {
     font-size: 2.5rem;
   }
+
+  &--3  {
+    font-size: 2rem;
+    
+  }
 }
 
 .heading {
@@ -30,11 +35,17 @@
   }
 
   &__heading-main {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   &__heading-sub {
-    font-size: 6rem;
+    font-size: 5rem;
     font-style: italic;
+  }
+
+  &-3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--secondary-color-1);
   }
 }
