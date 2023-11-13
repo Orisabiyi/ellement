@@ -1,6 +1,5 @@
 .collection {
-  display: flex;
-  align-items: center;
+  @include flex-new(row, center, center);
   gap: 4rem;
 
   list-style: none;

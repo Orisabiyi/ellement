@@ -17,6 +17,7 @@
     border-radius: 50rem;
     position: absolute;
     transform: translateY(2rem);
+    z-index: 10;
   }
 
   &__logo {
@@ -50,4 +51,9 @@
 
 .logo {
   width: 15rem;
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
 }

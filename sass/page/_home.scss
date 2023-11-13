@@ -1,17 +1,78 @@
 .section {
 
-  &-about {
+  &--about {
     padding: 10rem 5rem;
     background-color: var(--secondary-color);
   }
 
-  &-properties {
+  &--properties {
     padding: 10rem 0;
     background-color: var(--primary-color-1);
 
-    display: flex;
+    @include flexColumn;
     flex-direction: column;
-    //justify-content: center;
-    align-items: center;
+  }
+
+  &--quality {
+    background: var(--gradient-main-1);
+    padding: 8rem 14rem;
+
+    @include flexColumn;
+  }
+
+  &__plan {
+    padding: 10rem 5rem;
+    background-color: var(--secondary-color);
+    @include flex-new(column, center, center);
+
+    &-collection {
+      @include flex-new(column, center, flex-start);
+    }
+
+    &-intro {
+      @include flex-new(column, center, center);
+
+      .paragraph--3 {
+        flex: 0 0 auto;
+        width: 67rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &__content {
+    @include flex;
+    gap: 9rem;
+    
+    &:first-of-type {
+      margin-bottom: 12rem;
+    }
+  }
+
+  &__write-up {
+    @include flex-new(column, center, flex-start);
+    gap: 3rem;
+  }
+
+  &__collection {
+    background-color: #fff;
+    padding: 4rem 6rem;
+    border-radius: 2rem;
+
+    @include flexColumn;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
 }

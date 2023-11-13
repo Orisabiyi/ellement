@@ -2,6 +2,20 @@
   margin-bottom: 2rem;
 }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
 .u-italic {
   font-style: italic;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(8rem);
 }

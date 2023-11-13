@@ -1,5 +1,4 @@
 .card {
-
   &s {
     margin-top: 10rem;
     flex: 0 0 auto;
@@ -8,13 +7,16 @@
 
   border-radius: 2rem;
   position: sticky;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 
   &__heading {
     display: flex;
     align-items: center;
     padding: 3rem;
 
-    & > .heading-3 {
+    & > .heading--3 {
       margin-right: auto;
     }
   }
@@ -33,28 +35,29 @@
       display: block;
     }
 
-    &-text, &-bg {
+    &-text,
+    &-bg {
       flex: 1;
     }
   }
 
   &--1 {
-    background-color: rgba(#D1D3FF, .65);
-    top: 10rem;
+    background-color: rgba(#d1d3ff, 0.65);
+    // top: 2rem;
   }
 
   &--2 {
-    background-color: #CAFCFF;
-    top: 20rem;
+    background-color: #cafcff;
+    // top: 10rem;
   }
 
   &--3 {
-    background-color: #B7FFB0;
-    top: 30rem;
+    background-color: #b7ffb0;
+    // top: 18rem;
   }
 
   &--4 {
     background-color: #fff;
-    top: 40rem;
+    // top: 30rem;
   }
 }
