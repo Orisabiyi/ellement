@@ -19,3 +19,9 @@
   opacity: 0;
   transform: translateY(8rem);
 }
+
+.animate-btn {
+  animation-name: booming;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}

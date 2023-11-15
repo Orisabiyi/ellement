@@ -48,6 +48,12 @@
 
   &__main {
     font-size: 6rem;
+
+    & > span {
+      display: inline-block;
+      font-size: 5.6rem;
+      font-style: italic;
+    }
   }
 
   &__sub {
