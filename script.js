@@ -49,5 +49,5 @@ const stickyCard = function() {
 
 
 // Function Call
-// stickyNav();
+stickyNav();
 stickyCard();
