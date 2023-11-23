@@ -3,6 +3,7 @@
     margin-top: 10rem;
     flex: 0 0 auto;
     width: 70%;
+    transition: all 2s;
   }
 
   border-radius: 2rem;
@@ -43,21 +44,17 @@
 
   &--1 {
     background-color: rgba(#d1d3ff, 0.65);
-    // top: 2rem;
   }
 
   &--2 {
     background-color: #cafcff;
-    // top: 10rem;
   }
 
   &--3 {
     background-color: #b7ffb0;
-    // top: 18rem;
   }
 
   &--4 {
     background-color: #fff;
-    // top: 30rem;
   }
 }

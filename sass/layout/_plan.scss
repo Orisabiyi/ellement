@@ -1,0 +1,10 @@
+.plan {
+  &__collection {
+    list-style: none;
+  }
+
+  &__item {
+    @include flex-new(row, center, center);
+    gap: 2rem;
+  }
+}

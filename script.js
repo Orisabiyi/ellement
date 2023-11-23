@@ -15,13 +15,27 @@ const stickyNav = function() {
     }
   }
 
-  const options = {
-    root: null,
-    threshold: 0,
-    rootMargin: '-150px',
-  }
-  const observer = new IntersectionObserver(navCall, options);
+  const observer = new IntersectionObserver(navCall,  { root: null, threshold: 0, rootMargin: '-150px'});
   observer.observe(header);
+}
+
+const sectionAnimate = function() {
+	const sectionAll = document.querySelectorAll('.section');
+	const sectionObs = function(entries, observer) {
+		const [entry] = entries;
+		if(!entry.isIntersecting) return;
+
+    entry.target.classList.remove('hidden');
+    // entry.target.style.transition = 'all 1s';
+    observer.unobserve(entry.target);
+	}
+
+	const observer = new IntersectionObserver(sectionObs, {root: null, threshold: 0.1, });
+	sectionAll.forEach(function(section) {
+    section.classList.add('hidden');
+    observer.observe(section);
+  });
+	console.log(sectionAll);
 }
 
 const stickyCard = function() {
@@ -50,4 +64,5 @@ const stickyCard = function() {
 
 // Function Call
 stickyNav();
+sectionAnimate();
 stickyCard();

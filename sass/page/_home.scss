@@ -1,11 +1,12 @@
 .section {
+  transition: all 2s;
 
-  &--about {
+  &-about {
     padding: 10rem 5rem;
     background-color: var(--secondary-color);
   }
 
-  &--properties {
+  &-properties {
     padding: 10rem 0;
     background-color: var(--primary-color-1);
 
@@ -13,14 +14,14 @@
     flex-direction: column;
   }
 
-  &--quality {
+  &-quality {
     background: var(--gradient-main-1);
     padding: 8rem 14rem;
 
     @include flexColumn;
   }
 
-  &__plan {
+  &-plan {
     padding: 10rem 5rem;
     background-color: var(--secondary-color);
     @include flex-new(column, center, center);
@@ -43,23 +44,12 @@
       }
     }
 
-    &-collection {
-      @include flex-new(column, center, flex-start);
-      gap: 3.3rem;
-
-      font-size: 2.3rem;
-      background-color: #fff;
-      padding: 4.8rem;
-      border-radius: 2rem;
-      list-style: none;
-    }
-
     &-item {
       @include flex-new(row, center, center);
       gap: 4rem;
     }
 
-    &-intro {
+    .plan__intro {
       @include flex-new(column, center, center);
       gap:3rem;
 
@@ -71,21 +61,7 @@
     }
   }
 
-  &__content {
-    @include flex;
-    gap: 9rem;
-    
-    &:first-of-type {
-      margin-bottom: 12rem;
-    }
-  }
-
-  &__write-up {
-    @include flex-new(column, center, flex-start);
-    gap: 3rem;
-  }
-
-  &__collection {
+  .plan__collection {
     background-color: #fff;
     padding: 4rem 6rem;
     border-radius: 2rem;
@@ -93,12 +69,6 @@
     @include flexColumn;
     align-items: flex-start;
     gap: 2.4rem;
-  }
-
-  &__item {
-    font-size: 1.6rem;
-    font-family: 'Inter';
-    font-weight: 400;
   }
 
   &__btn {
