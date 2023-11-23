@@ -60,20 +60,12 @@
       }
     }
   }
-
-  .plan__collection {
-    background-color: #fff;
-    padding: 4rem 6rem;
-    border-radius: 2rem;
-
-    @include flexColumn;
-    align-items: flex-start;
-    gap: 2.4rem;
-  }
-
   &__btn {
     background-color: transparent;
     border: none;
     outline: none;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 }
