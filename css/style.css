@@ -92,12 +92,18 @@ body {
         font-size: 6rem; } }
   .heading__span {
     display: block; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__span {
+        display: inline-block; } }
   .heading--1 {
     color: var(--dominant-color); }
   .heading--2 {
     font-size: 4.5rem; }
   .heading--3 {
     font-size: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading--3 {
+        font-size: 3.5rem; } }
   .heading--4 {
     font-size: 3.2rem; }
 
@@ -163,6 +169,12 @@ body {
     padding: 3rem; }
     .card__heading > .heading--3 {
       margin-right: auto; }
+  .card__img {
+    display: inline-block; }
+    @media only screen and (max-width: 37.5em) {
+      .card__img {
+        width: 8rem;
+        height: auto; } }
   .card__figure {
     display: flex;
     align-items: center;
@@ -205,11 +217,10 @@ body {
       justify-content: center;
       gap: 5rem; } }
   .about__img, .about__text {
-    flex: 0 0 auto;
-    width: 49%; }
+    flex: 1; }
   @media only screen and (max-width: 37.5em) {
     .about__img {
-      width: 50rem;
+      width: 65rem;
       height: auto; } }
   .about__text {
     display: flex;
@@ -222,8 +233,17 @@ body {
     .about__text > a {
       align-self: flex-start;
       margin-top: 4rem; }
-    .about__text .heading .heading__span:nth-child(2) {
+      @media only screen and (max-width: 37.5em) {
+        .about__text > a {
+          margin-top: 3rem; } }
+    .about__text .heading__span:nth-child(2) {
       font-size: 3.7rem; }
+      @media only screen and (max-width: 37.5em) {
+        .about__text .heading__span:nth-child(2) {
+          font-size: 3.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__text .btn {
+        align-self: center; } }
   .about__background {
     display: block;
     width: 80%;

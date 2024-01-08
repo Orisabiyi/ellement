@@ -22,6 +22,15 @@
     }
   }
 
+  &__img {
+    display: inline-block;
+
+    @include respond(phone) {
+      width: 8rem;
+      height: auto;
+    }
+  }
+
   &__figure {
     display: flex;
     align-items: center;

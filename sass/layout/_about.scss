@@ -11,13 +11,12 @@
 
 
   &__img, &__text {
-    flex: 0 0 auto;
-    width: 49%;
+    flex: 1;
   }
 
   &__img {
     @include respond(phone) {
-      width: 50rem;
+      width: 65rem;
       height: auto;
     }
   }
@@ -35,10 +34,24 @@
     & > a {
       align-self: flex-start;
       margin-top: 4rem;
+
+      @include respond(phone){
+        margin-top: 3rem;
+      }
     }
 
-    .heading .heading__span:nth-child(2) {
+    .heading__span:nth-child(2) {
       font-size: 3.7rem;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
+    }
+
+    .btn {
+      @include respond(phone ){
+        align-self: center;
+      }
     }
   }
 

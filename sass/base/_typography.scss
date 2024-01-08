@@ -79,6 +79,10 @@
 
   &__span {
     display: block;
+
+    @include respond(phone) {
+      display: inline-block;
+    }
   }
 
   &--1 {
@@ -91,6 +95,10 @@
 
   &--3 {
     font-size: 4rem;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
   }
 
   &--4 {
