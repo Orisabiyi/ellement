@@ -1,5 +1,5 @@
 .section {
-  transition: all 2s;
+  // transition: all 5s;
 
   &-about {
     padding: 10rem 5rem;
@@ -60,6 +60,7 @@
       }
     }
   }
+  
   &__btn {
     background-color: transparent;
     border: none;

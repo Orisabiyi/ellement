@@ -17,3 +17,11 @@
   align-items: $align-item;
   flex-direction: $flex-direction;
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+}

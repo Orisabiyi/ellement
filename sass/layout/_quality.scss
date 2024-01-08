@@ -2,6 +2,10 @@
   &__content {
     @include flex;
     gap: 9rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
     
     &:first-of-type {
       margin-bottom: 12rem;

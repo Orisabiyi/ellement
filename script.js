@@ -15,18 +15,18 @@ const stickyNav = function() {
     }
   }
 
-  const observer = new IntersectionObserver(navCall,  { root: null, threshold: 0, rootMargin: '-150px'});
+  const observer = new IntersectionObserver(navCall,  { root: null, threshold: 0, rootMargin: '-50px'});
   observer.observe(header);
 }
 
 const sectionAnimate = function() {
 	const sectionAll = document.querySelectorAll('.section');
+
 	const sectionObs = function(entries, observer) {
 		const [entry] = entries;
 		if(!entry.isIntersecting) return;
 
     entry.target.classList.remove('hidden');
-    // entry.target.style.transition = 'all 1s';
     observer.unobserve(entry.target);
 	}
 
