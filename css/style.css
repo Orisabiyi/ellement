@@ -173,7 +173,7 @@ body {
     display: inline-block; }
     @media only screen and (max-width: 37.5em) {
       .card__img {
-        width: 8rem;
+        width: 6rem;
         height: auto; } }
   .card__figure {
     display: flex;
@@ -183,13 +183,17 @@ body {
     @media only screen and (max-width: 37.5em) {
       .card__figure {
         flex-direction: column; } }
+    .card__figure-text, .card__figure-img {
+      flex: 0 0 auto;
+      width: 48%; }
+      @media only screen and (max-width: 37.5em) {
+        .card__figure-text, .card__figure-img {
+          width: 100%; } }
     .card__figure-bg {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block; }
-    .card__figure-text, .card__figure-bg {
-      flex: 1; }
   .card--1 {
     background-color: rgba(209, 211, 255, 0.65); }
   .card--2 {
@@ -401,9 +405,18 @@ body {
   .quality__content:first-of-type {
     margin-bottom: 12rem; }
 
-.quality__write-up, .quality__collection {
+.quality__write-up, .quality__collection, .quality__figure {
   flex: 0 0 auto;
   width: 50%; }
+  @media only screen and (max-width: 37.5em) {
+    .quality__write-up, .quality__collection, .quality__figure {
+      width: 80%; } }
+
+.quality__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .quality__write-up {
   display: flex;
@@ -411,6 +424,9 @@ body {
   align-items: flex-start;
   flex-direction: column;
   gap: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .quality__write-up {
+      align-items: center; } }
 
 .quality__collection {
   display: flex;
@@ -439,6 +455,24 @@ body {
     height: 1.2rem;
     background-color: var(--secondary-color);
     border-radius: 50%; }
+
+.quality__btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+  @media only screen and (max-width: 37.5em) {
+    .quality__btn {
+      width: 13rem;
+      height: auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .quality__btn img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; } }
 
 .section-about {
   padding: 10rem 5rem;
@@ -496,11 +530,3 @@ body {
       flex: 0 0 auto;
       width: 67rem;
       text-align: center; }
-
-.section__btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  animation-name: rotate;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }

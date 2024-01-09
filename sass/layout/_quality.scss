@@ -1,4 +1,5 @@
 .quality {
+
   &__content {
     @include flex;
     gap: 9rem;
@@ -12,14 +13,29 @@
     }
   }
 
-  &__write-up, &__collection {
+  &__write-up, &__collection, &__figure {
     flex: 0 0 auto;
     width: 50%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__write-up {
     @include flex-new(column, center, flex-start);
     gap: 3rem;
+
+    @include respond(phone) {
+      align-items: center;
+    }
   }
 
   &__collection {
@@ -49,6 +65,30 @@
       height: 1.2rem;
       background-color: var(--secondary-color);
       border-radius: 50%;
+    }
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    @include respond(phone) {
+      width: 13rem;
+      height: auto;
+    }
+
+    img {
+      @include respond(phone) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
