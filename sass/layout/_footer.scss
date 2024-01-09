@@ -6,9 +6,18 @@
 
   @include flex-new(column, center, center);
 
+  @include respond(phone) {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
   &__figure {
     margin-bottom: 17rem;
     filter: invert(1);
+
+    @include respond(phone) {
+      margin-bottom: 10rem
+    }
   }
 
   &__company-motto {

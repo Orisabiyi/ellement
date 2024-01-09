@@ -11,6 +11,10 @@
     flex: 0 0 auto;
     width: 75%;
     gap: 2.4rem;
+
+    @include respond(phone) {
+      width: 85%;
+    }
   }
 
   &__item {
@@ -30,7 +34,7 @@
 
       @include respond(phone) {
         width: 6rem;
-      transform: translateY(0rem);
+        transform: translateY(-2rem);
       }
       
       img {
