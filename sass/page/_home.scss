@@ -48,16 +48,5 @@
       @include flex-new(row, center, center);
       gap: 4rem;
     }
-
-    .plan__intro {
-      @include flex-new(column, center, center);
-      gap:3rem;
-
-      .paragraph--3 {
-        flex: 0 0 auto;
-        width: 67rem;
-        text-align: center;
-      }
-    }
   }
 }
