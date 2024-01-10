@@ -7,10 +7,9 @@
   flex-direction: column;
 
   @include respond(phone) {
-    height: 120vh;
-    background: linear-gradient(to top, transparent 10%, $primary-color), url(../asset/hero-main.svg) no-repeat;
-    background-size: 100%;
-    background-position: center center;
+    background: linear-gradient(to top, rgba($primary-color, .8), rgba($primary-color, .8)), url(../asset/hero-main.svg) no-repeat;
+    background-size: cover;
+    background-position: top center;
     justify-content: center;
   }
 

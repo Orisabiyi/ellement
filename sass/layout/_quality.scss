@@ -34,7 +34,11 @@
     gap: 3rem;
 
     @include respond(phone) {
+      gap: 2rem;
       align-items: center;
+      flex: 0 0 auto;
+      width: 100%;
+      text-align: center;
     }
   }
 
