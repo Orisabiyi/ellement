@@ -35,7 +35,6 @@ const sectionAnimate = function() {
     section.classList.add('hidden');
     observer.observe(section);
   });
-	console.log(sectionAll);
 }
 
 const stickyCard = function() {

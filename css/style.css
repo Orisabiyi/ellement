@@ -109,9 +109,12 @@ body {
     font-size: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .heading--3 {
-        font-size: 3.5rem; } }
+        font-size: 3.2rem; } }
   .heading--4 {
     font-size: 3.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading--4 {
+        font-size: 2.75rem; } }
 
 .u-margin-bottom-1 {
   margin-bottom: 1.2rem; }
@@ -173,6 +176,9 @@ body {
     flex: 0 0 auto;
     width: 70%;
     transition: all 2s; }
+    @media only screen and (max-width: 37.5em) {
+      .cards {
+        width: 85%; } }
   .card:not(:last-child) {
     margin-bottom: 3rem; }
   .card__heading {
@@ -185,7 +191,7 @@ body {
     display: inline-block; }
     @media only screen and (max-width: 37.5em) {
       .card__img {
-        width: 6rem;
+        width: 4rem;
         height: auto; } }
   .card__figure {
     display: flex;
