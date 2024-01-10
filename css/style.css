@@ -22,7 +22,8 @@
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scrollbar-width: none; }
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 31.25%; } }
@@ -32,7 +33,10 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   color: var(--dominant-color);
-  line-height: 1.3; }
+  line-height: 1.3;
+  -ms-overflow-style: none; }
+  body::-webkit-scrollbar {
+    display: none; }
 
 .paragraph--1 {
   font-size: 1.6rem;
